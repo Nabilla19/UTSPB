@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "830257437502",
+    "project_id": "uts-f291a",
+    "storage_bucket": "uts-f291a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830257437502:android:53064a8db6848a5c14aa6f",
+        "android_client_info": {
+          "package_name": "com.example.movietix"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTICmhWsuO92THjFaW5yWdmBHSZ4a1G28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

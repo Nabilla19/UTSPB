@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MovieTix</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="email_hint">Masukkan Email</string>
+    <string name="password_hint">Masukkan Password</string>
+    <string name="sign_up">Daftar</string>
+    <string name="login">Masuk</string>
+</resources>

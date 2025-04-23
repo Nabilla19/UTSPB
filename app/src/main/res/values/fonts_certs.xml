@@ -1,0 +1,12 @@
+<resources>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+    </array>
+
+    <array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwkwl...
+            <!-- (Google Fonts certificate, biasanya udah cukup satu baris ini) -->
+        </item>
+    </array>
+</resources>

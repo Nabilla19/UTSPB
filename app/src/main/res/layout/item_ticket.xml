@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <com.example.movietix.view.CustomTextView
+            android:id="@+id/ticket_movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Wick 4"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000" />
+
+        <com.example.movietix.view.CustomTextView
+            android:id="@+id/ticket_theater_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGV Grand Indonesia"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:layout_marginTop="4dp" />
+
+        <com.example.movietix.view.CustomTextView
+            android:id="@+id/ticket_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24 Apr 2025, 18:00"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp" />
+
+        <com.example.movietix.view.CustomTextView
+            android:id="@+id/ticket_seat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat A12"
+            android:textSize="14sp"
+            android:textColor="#888"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
