@@ -44,6 +44,9 @@ dependencies {
     // Firebase Auth
     implementation(libs.firebase.auth)
 
+    //firebase database
+    implementation ("com.google.firebase:firebase-database:20.3.0")
+
     // Google Play services (Credentials, Auth)
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)

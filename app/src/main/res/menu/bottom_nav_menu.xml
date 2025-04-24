@@ -1,18 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_home"
-        android:title="Home"/>
+        android:title="Home" />
+
     <item
         android:id="@+id/nav_theaters"
         android:icon="@drawable/ic_theater"
-        android:title="Theaters"/>
+        android:title="Theaters" />
+
     <item
         android:id="@+id/nav_tickets"
         android:icon="@drawable/ic_ticket"
-        android:title="Tickets"/>
+        android:title="Tickets" />
+
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_profile"
-        android:title="Profile"/>
+        android:title="Profile" />
+
 </menu>

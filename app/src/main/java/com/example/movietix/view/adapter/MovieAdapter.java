@@ -41,7 +41,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
         Glide.with(context)
                 .load(movie.getPosterUrl())
-                .placeholder(R.drawable.komang)
                 .into(holder.poster);
     }
 
