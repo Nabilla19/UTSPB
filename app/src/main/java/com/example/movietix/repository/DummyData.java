@@ -4,6 +4,7 @@ import com.example.movietix.model.Ticket;
 import com.example.movietix.model.Theater;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class DummyData {
@@ -11,9 +12,9 @@ public class DummyData {
     public static List<Ticket> getDummyTickets() {
         List<Ticket> tickets = new ArrayList<>();
 
-        tickets.add(new Ticket("Inception", "CGV Central Park", "21 April 2025", "A12"));
-        tickets.add(new Ticket("Interstellar", "XXI Gandaria City", "22 April 2025", "B10"));
-        tickets.add(new Ticket("Oppenheimer", "CGV AEON Mall", "23 April 2025", "C7"));
+        tickets.add(new Ticket("Godzilla x Kong: The New Empire", "CGV Mal SKA", "26 April 2025", "D5"));
+        tickets.add(new Ticket("Wonka", "XXI Living World", "27 April 2025", "E7"));
+        tickets.add(new Ticket("The Garfield Movie", "CGV Transmart Pekanbaru", "28 April 2025", "F3"));
 
         return tickets;
     }
@@ -21,9 +22,9 @@ public class DummyData {
     public static List<Theater> getDummyTheaters() {
         List<Theater> theaters = new ArrayList<>();
 
-        theaters.add(new Theater("CGV Central Park", "Jakarta Barat", new String[]{"3D", "Dolby Atmos"}));
-        theaters.add(new Theater("XXI Gandaria City", "Jakarta Selatan", new String[]{"2D", "Premiere"}));
-        theaters.add(new Theater("CGV AEON Mall", "Tangerang", new String[]{"4DX", "3D"}));
+        theaters.add(new Theater("CGV Mal SKA", "Pekanbaru", Arrays.asList("3D", "Dolby Atmos")));
+        theaters.add(new Theater("XXI Living World", "Pekanbaru", Arrays.asList("2D", "Premiere")));
+        theaters.add(new Theater("CGV Transmart Pekanbaru", "Pekanbaru", Arrays.asList("4DX", "3D")));
 
         return theaters;
     }

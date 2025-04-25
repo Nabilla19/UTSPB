@@ -1,50 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@drawable/bg_gradient"
+    android:fillViewport="true"
     android:padding="16dp">
 
-    <com.example.movietix.view.CustomTextView
-        android:id="@+id/tv_greeting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Halo, Selamat Datang!"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
-
-    <com.example.movietix.view.CustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Now Playing"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_now_playing"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:overScrollMode="never"
-        android:scrollbars="none" />
+        android:orientation="vertical">
 
-    <com.example.movietix.view.CustomTextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Coming Soon"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp" />
+        <com.example.movietix.view.CustomTextView
+            android:id="@+id/tv_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Halo, Selamat Datang!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#2C2C2C"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_coming_soon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:overScrollMode="never"
-        android:scrollbars="none" />
+        <com.example.movietix.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Now Playing"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginBottom="8dp" />
 
-</LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_now_playing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_marginBottom="16dp" />
+
+        <com.example.movietix.view.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coming Soon"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_coming_soon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+</ScrollView>

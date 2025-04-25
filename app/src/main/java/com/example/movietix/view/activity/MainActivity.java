@@ -12,6 +12,7 @@ import com.example.movietix.view.fragment.HomeFragment;
 import com.example.movietix.view.fragment.TheatersFragment;
 import com.example.movietix.view.fragment.TicketsFragment;
 import com.example.movietix.view.fragment.ProfileFragment;
+import com.example.movietix.repository.DummyDataUploader; // ✅ Tambahkan ini
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
             redirectToLogin();
             return;
         }
+
+        // ✅ Upload dummy data ke Firebase Realtime Database
+        DummyDataUploader.uploadDummyData();
 
         // Setup navigation
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {

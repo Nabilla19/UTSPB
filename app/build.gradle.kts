@@ -65,6 +65,7 @@ dependencies {
     // Android tests
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation ("com.google.android.material:material:1.6.0")
 
     implementation ("androidx.legacy:legacy-support-core-utils:1.0.0")
 }

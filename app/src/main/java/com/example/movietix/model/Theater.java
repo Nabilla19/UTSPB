@@ -1,11 +1,17 @@
 package com.example.movietix.model;
 
+import java.util.List;
+
 public class Theater {
     private String name;
     private String location;
-    private String[] tags;
+    private List<String> tags; // ✅ Ubah dari String[] ke List<String>
 
-    public Theater(String name, String location, String[] tags) {
+    public Theater() {
+        // Diperlukan oleh Firebase
+    }
+
+    public Theater(String name, String location, List<String> tags) {
         this.name = name;
         this.location = location;
         this.tags = tags;
@@ -19,7 +25,7 @@ public class Theater {
         return location;
     }
 
-    public String[] getTags() {
+    public List<String> getTags() {
         return tags;
     }
 }

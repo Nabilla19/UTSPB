@@ -6,6 +6,10 @@ public class Ticket {
     private String date;
     private String seat;
 
+    public Ticket() {
+        // Diperlukan oleh Firebase
+    }
+
     public Ticket(String movieTitle, String theaterName, String date, String seat) {
         this.movieTitle = movieTitle;
         this.theaterName = theaterName;
