@@ -34,38 +34,28 @@ android {
 }
 
 dependencies {
-
-    // AndroidX libraries
+    // AndroidX & Material
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.legacy.support.core.utils)
 
-    // Firebase Auth
+    // Firebase
     implementation(libs.firebase.auth)
+    implementation(libs.firebase.database)
 
-    //firebase database
-    implementation ("com.google.firebase:firebase-database:20.3.0")
-
-    // Google Play services (Credentials, Auth)
+    // Google Sign-In & Credentials
     implementation(libs.credentials)
     implementation(libs.credentials.play.services.auth)
-
-    // Google Sign-In
     implementation(libs.googleid)
 
-    // Glide (Image loading)
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation(libs.firebase.database)
-    annotationProcessor("com.github.bumptech.glide:compiler:4.16.0")
+    // Glide
+    implementation(libs.glide)
+    annotationProcessor(libs.glide.compiler)
 
-    // Unit testing
+    // Testing
     testImplementation(libs.junit)
-
-    // Android tests
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
-    implementation ("com.google.android.material:material:1.6.0")
-
-    implementation ("androidx.legacy:legacy-support-core-utils:1.0.0")
 }
